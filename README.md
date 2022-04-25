@@ -1,6 +1,9 @@
-# proyecto2022
-Estructura de Proyecto Lab de Compu II - 2022
-
+# UCC FLY 
+Estructura de Proyecto Lab de Compu II - 2022. Esta pagina corresponde a la aerolinea "UCC FLY".
+## Autores: Correa, Lautaro - Schonfeld, Gustavo
+## Tecnologias usadas:
+* HTML
+* CSS 
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio

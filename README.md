@@ -4,6 +4,9 @@ Estructura de Proyecto Lab de Compu II - 2022. Esta pagina corresponde a la aero
 ## Tecnologias usadas:
 * HTML
 * CSS 
+
+Link al sitio: https://ucc-labcompu2.github.io/proyecto2022-correa-schonfeld/index.html
+
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio

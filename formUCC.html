@@ -5,17 +5,17 @@
     <title>Completar Formulario</title> <!-- Creo que esto no hace falta-->
 
     <meta name="Formulario" content="Formulario">
-
+    <link rel="stylesheet" href="prueba.css" type="text/css"
 </head>
 <body>
 <div>
 
     <form>
-        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre"> <br/>
-        <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido"> <br/>
-        <input type="email" id="Email" name="Email" placeholder="Ingrese su Email"> <br/>
-        <input type="number" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC"> <br/>
-        Origen:
+        Nombre:<br/><input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre"> <br/>
+        Apellido:<br/><input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido"> <br/>
+        Email:<br/><input type="email" id="Email" name="Email" placeholder="Ingrese su Email"> <br/>
+        Clave UCC:<br/><input type="number" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" /> <br/>
+        Origen:<br/>
         <select>
 
             <option>Buenos Aires</option>
@@ -25,20 +25,28 @@
             <option>Santiago del Estero</option>
             <option>San Juan</option>
         </select><br/>
-
-        Destino:
-        <select>
+Destino:<br/>
+                <select>
+        >
             <option>Buenos Aires</option>
             <option>Cordoba</option>
-            <option>La PLata</option>
+            <option>La Plata</option>
             <option>Salta</option>
             <option>Santiago del Estero</option>
             <option>San Juan</option>
         </select><br/>
-      Fecha de Partida:
-      <br/>
-      Fecha de Regreso:
-      <br/>
+        <br/>
+      Fecha de Partida:<input type="date" id="fechasalida" name="fechasalida"
+                              value="0"
+        min="2022-01-01" max="2022-12-31" ><br/>
+        <br/>
+
+        Fecha de Regreso: <input type="date" id="fechasalida" name="fechasalida"
+                                 value="0"
+                                 min="2022-01-01" max="2022-12-31">
+
+        <br/>
+        <br/>
         Por favor ingrese alguna indicacion extra que debamos saber (enfermeda, patologia, vertigo, etc):
         <textarea></textarea> <br>
 

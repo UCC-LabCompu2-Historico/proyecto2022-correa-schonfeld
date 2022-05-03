@@ -4,9 +4,16 @@ h1{
 }
 
 
+body{
+    background: linear-gradient(to bottom, lightblue, white);
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+
 *{box-sizing:border-box;}
 
 form{
+    text-align-all: center;
     width:300px;
     padding:16px;
     border-radius:10px;

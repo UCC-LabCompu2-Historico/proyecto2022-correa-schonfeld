@@ -5,40 +5,45 @@
     <title>Completar Formulario</title> <!-- Creo que esto no hace falta-->
 
     <meta name="Formulario" content="Formulario">
-    <link rel="stylesheet" href="prueba.css" type="text/css"
+    <link rel="stylesheet" href="prueba.css" type="text/css">
 </head>
 <body>
 <div>
 
-    <form>
-        Nombre:<br/><input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre"> <br/>
-        Apellido:<br/><input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido"> <br/>
-        Email:<br/><input type="email" id="Email" name="Email" placeholder="Ingrese su Email"> <br/>
-        Clave UCC:<br/><input type="number" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" /> <br/>
-        Origen:<br/>
-        <select>
+    <form action="http://localhost:63342/proyecto2022-correa-schonfeld/formUCC2.html">
+        <br><label>Nombre:</label><input type="text" name="nombre" placeholder="Ingrese su nombre"
+                                         required pattern="[a-zA-Z ]{3,254}"
+                                         title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
+        <label>Apellido:</label><input type="text" name="apellido" placeholder="Ingrese su apellido"
+                                       required pattern="[a-zA-Z ]{3,254}"
+                                       title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
+        <label>Email:</label><input type="email" id="email" name="email" placeholder="Ingrese su Email" required > <br/>
+        <label>Clave UCC:</label><input type="text" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" required /> <br/>
+        <label>Origen:</label><br/>
+        <select name="origen">
 
-            <option>Buenos Aires</option>
-            <option>Cordoba</option>
-            <option>La PLata</option>
-            <option>Salta</option>
-            <option>Santiago del Estero</option>
-            <option>San Juan</option>
+            <option value="1">Buenos Aires</option>
+            <option value="2">Cordoba</option>
+            <option value="3">La Plata</option>
+            <option value="4">Salta</option>
+            <option value="5">Santiago del Estero</option>
+            <option value="6">San Juan</option>
         </select><br/>
-Destino:<br/>
-                <select>
-        >
-            <option>Buenos Aires</option>
-            <option>Cordoba</option>
-            <option>La Plata</option>
-            <option>Salta</option>
-            <option>Santiago del Estero</option>
-            <option>San Juan</option>
+
+        <label>Destino:</label><br/>
+        <select name="destino">
+
+            <option value="1">Buenos Aires</option>
+            <option value="2">Cordoba</option>
+            <option value="3">La Plata</option>
+            <option value="4">Salta</option>
+            <option value="5">Santiago del Estero</option>
+            <option value="6">San Juan</option>
         </select><br/>
         <br/>
-      Fecha de Partida:<input type="date" id="fechasalida" name="fechasalida"
-                              value="0"
-        min="2022-01-01" max="2022-12-31" ><br/>
+        Fecha de Partida:<input type="date" id="fechapartida" name="fechapartida"
+                                value="0"
+                                min="2022-01-01" max="2022-12-31" ><br/>
         <br/>
 
         Fecha de Regreso: <input type="date" id="fechasalida" name="fechasalida"
@@ -50,10 +55,11 @@ Destino:<br/>
         Por favor ingrese alguna indicacion extra que debamos saber (enfermeda, patologia, vertigo, etc):
         <textarea></textarea> <br>
 
-        <button>Siguiente</button>
-
+        <button type="submit">Siguiente</button>
+        <!-- <button><a href="http://localhost:63342/proyecto2022-correa-schonfeld/formUCC2.html">Siguiente</a></button> -->
     </form>
 </div>
 
 </body>
+
 </html>

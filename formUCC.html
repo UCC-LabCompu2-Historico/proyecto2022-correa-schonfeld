@@ -6,14 +6,20 @@
 
     <meta name="Formulario" content="Formulario">
     <link rel="stylesheet" href="prueba.css" type="text/css">
-
     <link rel="shortcut icon" href="imagenes/fav_avion.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <style>
+        div h1{
+            font-family: 'Tapestry', cursive;
+        }
+    </style>
 
 </head>
 <body>
 <div>
 
     <form action="http://localhost:63342/proyecto2022-correa-schonfeld/formUCC2.html">
+        <h1>Datos del pasajero</h1>
         <br><label>Nombre:</label><input type="text" name="nombre" placeholder="Ingrese su nombre"
                                          required pattern="[a-zA-Z ]{3,254}"
                                          title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
@@ -59,7 +65,6 @@
         <textarea></textarea> <br>
 
         <button type="submit">Siguiente</button>
-        <!-- <button><a href="http://localhost:63342/proyecto2022-correa-schonfeld/formUCC2.html">Siguiente</a></button> -->
     </form>
 </div>
 

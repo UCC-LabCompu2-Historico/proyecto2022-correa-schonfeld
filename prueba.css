@@ -74,3 +74,17 @@ textarea{
     display:block;
 }
 
+/* link sin visitar */
+a:link {
+    color: darkblue;
+}
+
+/* link visitado */
+a:visited {
+    color: blueviolet;
+}
+
+/* mouse sobre el link */
+a:hover {
+    color: black;
+}

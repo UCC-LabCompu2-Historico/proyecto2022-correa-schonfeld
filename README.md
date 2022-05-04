@@ -5,7 +5,7 @@ Estructura de Proyecto Lab de Compu II - 2022. Esta pagina corresponde a la aero
 * HTML
 * CSS 
 
-Link al sitio: [Proyecto UCC FLY] https://ucc-labcompu2.github.io/proyecto2022-correa-schonfeld/
+Link al sitio: [Proyecto UCC FLY] http://localhost:63342/proyecto2022-correa-schonfeld/formUCC2.html
 
 ## Requisitos del Primer Parcial
 

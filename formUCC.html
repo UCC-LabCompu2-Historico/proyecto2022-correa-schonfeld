@@ -18,34 +18,34 @@
 
     <form action="/proyecto2022-correa-schonfeld/formUCC2.html">
         <h1>Datos del pasajero</h1>
-        <br><label>Nombre:</label><input type="text" name="nombre" placeholder="Ingrese su nombre"
+        <br><label for="nombre">Nombre:</label><input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre"
                                          required pattern="[a-zA-Z ]{3,254}"
                                          title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
-        <label>Apellido:</label><input type="text" name="apellido" placeholder="Ingrese su apellido"
+        <label for="apellido">Apellido:</label><input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellido"
                                        required pattern="[a-zA-Z ]{3,254}"
                                        title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
-        <label>Email:</label><input type="email" id="email" name="email" placeholder="Ingrese su Email" required > <br/>
-        <label>Clave UCC:</label><input type="text" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" required /> <br/>
-        <label>Origen:</label><br/>
-        <select name="origen">
+        <label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Ingrese su Email" id="email" required > <br/>
+        <label for="clave">Clave UCC:</label><input type="text" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" id="clave" required /> <br/>
+        <label for="origen">Origen:</label><br/>
+        <select name="origen" id="origen">
 
-            <option value="1">Buenos Aires</option>
-            <option value="2">Cordoba</option>
-            <option value="3">La Plata</option>
-            <option value="4">Salta</option>
-            <option value="5">Santiago del Estero</option>
-            <option value="6">San Juan</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="La Plata">La Plata</option>
+            <option value="Salta">Salta</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="San Juan">San Juan</option>
         </select><br/>
 
-        <label>Destino:</label><br/>
-        <select name="destino">
+        <label for="destino">Destino:</label><br/>
+        <select name="destino" id="destino">
 
-            <option value="1">Buenos Aires</option>
-            <option value="2">Cordoba</option>
-            <option value="3">La Plata</option>
-            <option value="4">Salta</option>
-            <option value="5">Santiago del Estero</option>
-            <option value="6">San Juan</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="La Plata">La Plata</option>
+            <option value="Salta">Salta</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="San Juan">San Juan</option>
         </select><br/>
         <br/>
         Fecha de Partida:<input type="date" id="fechapartida" name="fechapartida"

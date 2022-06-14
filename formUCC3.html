@@ -5,8 +5,8 @@
     <title>Confirmar vuelo</title>
     <meta name="Formulario3" content="Formulario3">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="prueba.css" type="text/css">
@@ -14,23 +14,17 @@
     <link rel="shortcut icon" href="imagenes/fav_avion.png">
 
 </head>
-<body>
+<body onload="setInterval(animarAvion, 15)">
+
 <h2>Su reserva ha sido realizada con exito.</h2> <br/>
 
+<canvas id="myCanvas" class="aviondespegue" width="1525px" height="500px">
+    Tu navegador no soporta el tag de HTML5 canvas.
+</canvas>
 
-<div>
 
-    <form>
-        <img src="imagenes/avionmundo.jpg" alt="avion despegando" width="265" float="center">
+<!-- <a href="/proyecto2022-correa-schonfeld/index.html">Cerrar</a> -->
 
-        <br/>
-
-        <a href="/proyecto2022-correa-schonfeld/index.html">Cerrar</a>
-
-    </form>
-</div>
-
-<!-- <canvas> "Aca pondremos la imagen del avión despegando para que cumpla la función del canvas" </canvas> -->
-
+<script type="text/javascript" src="Funciones.js"></script>
 </body>
 </html>

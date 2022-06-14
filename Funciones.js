@@ -14,9 +14,6 @@ function dibujaravion(){
         ctx.drawImage(img,0,0);
     }
 
-//    ctx.fillStyle="#ade5d9";
-//    ctx.fillRect(0+margen,0-margen,40,40);
-
 }
 
 

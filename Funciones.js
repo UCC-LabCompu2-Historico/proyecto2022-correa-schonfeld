@@ -1,4 +1,11 @@
-
+/**
+ * Descripción: Dibujar y animar el canvas de avión, para el movimiento del mismo en nuestra página web.
+ * @method dibujaravion y animarAvion
+ * @parametro1  canvas
+ * @parametro2  contexto
+ * @parametro3  imagen
+ * @return Valor que retorna: Animación del avión.
+ */
 function dibujaravion(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");

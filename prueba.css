@@ -21,16 +21,7 @@ h6 {
     color: black;
 }
 
-/*.button {
-    background: darkblue;
-    color: darkblue;
-    display: inline-block;
-    font-size: 1.25em;
-    margin:10px;
-    width: auto;
-}
 
- */
 body {
     background: linear-gradient(to bottom, lightblue, white);
     background-attachment: fixed;

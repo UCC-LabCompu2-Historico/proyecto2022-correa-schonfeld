@@ -14,8 +14,6 @@ function dibujaravion(){
 
     var img = new Image();
     img.src="imagenes/aviondespegando.png";
-//    var = margen = 10;
-
 
     img.onload = function(){
         ctx.drawImage(img,0,0);
@@ -27,21 +25,22 @@ function dibujaravion(){
 x=0;
 dx=2;
 function animarAvion(){
-     var canvas = document.getElementById("myCanvas");
-     var ctx = canvas.getContext("2d");
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
 
-     canvas.width = canvas.width;
+    canvas.width = canvas.width;
 
-     //dibujar fondo
+    //dibujar fondo
     var img = new Image();
     img.src = "imagenes/aviondespegando.png";
 
     img.onload = function(){
-         ctx.drawImage(img,x,60);
-     }
+        ctx.drawImage(img,x,60);
+    }
 
-     if (x>canvas.width){
-         x=0;
-     }
+    if (x>canvas.width){
+        x=0;
+    }
     x+=dx;
- }
+}
+

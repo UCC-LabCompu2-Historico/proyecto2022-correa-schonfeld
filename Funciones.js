@@ -25,10 +25,20 @@ function dibujaravion(){
 x=0;
 dx=2;
 function animarAvion(){
+
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
+
     canvas.width = canvas.width;
+
+    let letras
+    letras = document.getElementById("lleg");
+
+    ctx.font="15pt Verdana";
+    ctx.fillStyle = "black";
+    ctx.fillText( "Avión con destino a:" + letras + "gustavo" , canvas.width/8, canvas.height/8)
+
 
     //dibujar fondo
     var img = new Image();

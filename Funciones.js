@@ -32,12 +32,13 @@ function animarAvion(){
 
     canvas.width = canvas.width;
 
-    let letras
-    letras = document.getElementById("lleg");
+    let letraorigen, letradestino;
+    letraorigen = localStorage.getItem("salidaLS");
+    letradestino = localStorage.getItem("llegadaLS");
 
     ctx.font="15pt Verdana";
     ctx.fillStyle = "black";
-    ctx.fillText( "Avión con destino a:" + letras + "gustavo" , canvas.width/8, canvas.height/8)
+    ctx.fillText( "Avión con origen " + letraorigen + " y destino a " + letradestino, canvas.width/2, canvas.height-20);
 
 
     //dibujar fondo

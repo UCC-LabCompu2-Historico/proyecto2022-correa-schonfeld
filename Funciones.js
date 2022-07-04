@@ -44,3 +44,49 @@ function animarAvion(){
     x+=dx;
 }
 
+
+function guardarLocalStorage(){
+    let nom, ape, correo, clave, salida, llegada, partida, regreso;
+    nom = document.getElementById("nombre").value;
+    ape = document.getElementById("apellido").value;
+    correo = document.getElementById("email").value;
+    clave = document.getElementById("ClaveUCC").value;
+    salida = document.getElementById("origen").value;
+    llegada = document.getElementById("destino").value;
+    partida = document.getElementById("fechapartida").value;
+    regreso = document.getElementById("fechasalida").value;
+    localStorage.setItem("nombreLS", nom);
+    localStorage.setItem("apellidoLS", ape);
+    localStorage.setItem("correoLS", correo);
+    localStorage.setItem("claveLS", clave);
+    localStorage.setItem("salidaLS", salida);
+    localStorage.setItem("llegadaLS", llegada);
+    localStorage.setItem("partidaLS", partida);
+    localStorage.setItem("regresoLS", regreso);
+
+    window.open('Resumen.html')
+
+}
+
+ function cargarLocalStorage(){
+
+    let  no, ap, co, cla, sal, lleg, part, regr;
+    no = localStorage.getItem("nombreLS");
+    ap = localStorage.getItem("apellidoLS");
+    co = localStorage.getItem("correoLS");
+    cla = localStorage.getItem("claveLS");
+    sal = localStorage.getItem("salidaLS");
+    lleg = localStorage.getItem("llegadaLS");
+    part = localStorage.getItem("partidaLS");
+    regr = localStorage.getItem("regresoLS");
+
+    document.getElementById("nom").value = no;
+    document.getElementById("ape").value = ap;
+    document.getElementById("correo").value = co;
+    document.getElementById("clave").value = cla;
+    document.getElementById("salida").value = sal;
+    document.getElementById("llegada").value = lleg;
+    document.getElementById("partida").value = part;
+    document.getElementById("regreso").value = regr;
+}
+

@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="prueba.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/fav_avion.png">
     <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
-
+    <script type="text/javascript" src="Funciones.js"></script>
 
 </head>
 <body>
 <div>
 
-    <form action="/proyecto2022-correa-schonfeld/formUCC2.html">
+<!--    <form action="/proyecto2022-correa-schonfeld/formUCC2.html" -->
+<!--    <form action="/proyecto2022-correa-schonfeld/Resumen.html"> -->
+        <form action="Resumen.html">
         <h1>Datos del pasajero</h1>
         <br><label for="nombre">Nombre:</label><input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre"
                                                       required pattern="[a-zA-Z ]{3,254}"
@@ -23,10 +25,11 @@
                                                       required pattern="[a-zA-Z ]{3,254}"
                                                       title="Solo se admiten letras. Tamaño mínimo: 3. Tamaño máximo: 40" /><br/>
         <label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Ingrese su Email" id="email" required > <br/>
-        <label for="clave">Clave UCC:</label><input type="text" minlength="0" maxlength="7" id="Clave UCC" name="Clave UCC" placeholder="Ingrese su Clave UCC" id="clave" required /> <br/>
+        <label for="clave">Clave UCC:</label><input type="text" minlength="0" maxlength="7" id="ClaveUCC" name="ClaveUCC" placeholder="Ingrese su Clave UCC" id="clave" required /> <br/>
         <label for="origen">Origen:</label><br/>
         <select name="origen" id="origen">
 
+            <option>-->Elige origen<--</option>
             <option value="Buenos Aires">Buenos Aires</option>
             <option value="Cordoba">Cordoba</option>
             <option value="La Plata">La Plata</option>
@@ -38,6 +41,7 @@
         <label for="destino">Destino:</label><br/>
         <select name="destino" id="destino">
 
+            <option>-->Elige destino<--</option>
             <option value="Buenos Aires">Buenos Aires</option>
             <option value="Cordoba">Cordoba</option>
             <option value="La Plata">La Plata</option>
@@ -60,7 +64,8 @@
         Por favor ingrese alguna indicacion extra que debamos saber (enfermedad, patologia, vertigo, etc):
         <textarea></textarea> <br>
 
-        <button type="submit">Siguiente</button>
+        <button type="button" onclick="guardarLocalStorage()">Siguiente</button>
+
     </form>
 </div>
 

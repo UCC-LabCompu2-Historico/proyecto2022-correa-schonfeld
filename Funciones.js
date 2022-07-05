@@ -55,6 +55,12 @@ function animarAvion(){
     x+=dx;
 }
 
+/**
+ * Descripción: Guardar y cargar los datos del pasajero para tenerlos disponibles y utilizarlos en el momento que haga falta.
+ * @method guardarLocalStorage y cargarLocalStorage
+ * @parametros Los datos que ingreso el pasajero en el primer formulario.
+ * @return Valor que retorna: El resumen del pasajero.
+ */
 
 function guardarLocalStorage(){
     let nom, ape, correo, clave, salida, llegada, partida, regreso;
